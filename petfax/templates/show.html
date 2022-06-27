@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Show</title>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet">
+</head>
+<body>
+    {% if pet %}
+        <h1>{{ pet.pet_name }}</h1>
+        <img src="{{ pet.pet_photo }}" alt="picture of pet" />
+        <h3>{{ pet.pet_fact }}</h3>
+    {% else %}
+        <h1>This pet has been adopted and is no longer available</h1>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    background-color: darkcyan;
+}
+img{
+    border-radius: 15px;
+    width: 33vw;
+}
+h1{
+    color: wheat;
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
